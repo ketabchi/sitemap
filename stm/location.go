@@ -59,7 +59,7 @@ func (loc *Location) URL() string {
 	base, _ := url.Parse(loc.opts.SitemapsHost())
 
 	for _, ref := range []string{
-		loc.opts.sitemapsPath + "/", loc.Filename(),
+		loc.opts.sitemapsPath, loc.Filename(),
 	} {
 		base, _ = base.Parse(ref)
 	}

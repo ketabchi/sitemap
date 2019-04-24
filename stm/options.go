@@ -53,6 +53,7 @@ func (opts *Options) SetPublicPath(path string) {
 
 // SetFilename sets that arg from Sitemap.SetFilename method
 func (opts *Options) SetFilename(filename string) {
+	opts.nmr = nil
 	opts.filename = filename
 }
 
