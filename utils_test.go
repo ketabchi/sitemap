@@ -1,4 +1,4 @@
-package stm
+package sitemap
 
 import (
 	"reflect"

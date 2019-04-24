@@ -1,4 +1,4 @@
-package stm
+package sitemap
 
 // NewOptions returns the created the Options's pointer
 func NewOptions() *Options {

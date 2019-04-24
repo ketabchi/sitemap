@@ -1,4 +1,4 @@
-package stm
+package sitemap
 
 const (
 	// MaxSitemapFiles defines max sitemap links per index file

@@ -9,4 +9,4 @@ File size ( uncompressed ) = 50MB
 
 http://godoc.org/github.com/ikeikeikeike/go-sitemap-generator/stm
 */
-package stm
+package sitemap
