@@ -7,12 +7,11 @@ import (
 )
 
 // PingSearchEngines requests some ping server from it calls Sitemap.PingSearchEngines.
-func PingSearchEngines(opts *Options, urls ...string) {
+func PingSearchEngines(sitemapURL string, urls ...string) {
 	urls = append(urls, []string{
 		"http://www.google.com/webmasters/tools/ping?sitemap=%s",
 		"http://www.bing.com/webmaster/ping.aspx?siteMap=%s",
 	}...)
-	sitemapURL := opts.IndexLocation().URL()
 
 	bufs := len(urls)
 	does := make(chan string, bufs)
